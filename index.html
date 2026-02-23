@@ -351,7 +351,7 @@ let medal = "";
 if(rank===1) medal='<span class="medal gold">🥇</span>';
 if(rank===2) medal='<span class="medal silver">🥈</span>';
 if(rank===3) medal='<span class="medal bronze">🥉</span>';
-html += `<p>${medal} ${rank}. ${d.key} - ${d.score}</p>`;
+html += `<p>${medal} ${rank} : ${d.key} - ${d.score}</p>`;
 rank++;
 });
 top10List.innerHTML = html;
@@ -385,3 +385,4 @@ updatePlayedCount();
 
 </body>
 </html>
+
